@@ -4,13 +4,13 @@ import { GetFoodAvability, GetFoodInTime, GetRestaurantById, GetTopRestaurants, 
 const router = express.Router();
 
 
-router.get("/:pincode",GetFoodAvability)
+router.get("/:pinCode",GetFoodAvability)
 
-router.get("/top-restaurants/:pincode",GetTopRestaurants)
+router.get("/top-restaurants/:pinCode",GetTopRestaurants)
 
-router.get("/foods-in-time/:time/:pincode",GetFoodInTime)
+router.get("/foods-in-time/:time/:pinCode",GetFoodInTime)
 
-router.get("/search/:pincode",SearchFoods)
+router.get("/search/:pinCode",SearchFoods)
 
 router.get("/restaurant/:id",GetRestaurantById)
 

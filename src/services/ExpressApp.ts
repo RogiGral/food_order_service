@@ -10,7 +10,7 @@ export default async(app: Application) => {
     app.use(express.urlencoded({ extended: true}))
     
     app.use(express.json());
- 
+
     const imagePath = path.join(__dirname,'../images');
     
     app.use('/images', express.static(imagePath));
@@ -18,7 +18,7 @@ export default async(app: Application) => {
     app.use('/admin', AdminRoute);
     app.use('/vendor', VendorRoute)
     app.use(ShoppingRoute)
-    
+
     return app;
 
 }
