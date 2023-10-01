@@ -1,1 +1,0 @@
-export const MONGO_URI = process.env.MONGO_URI || "mongodb+srv://foodorder:pass@foodorder.kzsla2h.mongodb.net/?retryWrites=true&w=majority";
