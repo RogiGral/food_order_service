@@ -18,7 +18,7 @@ export const ValidatePassword = async ( enteredPassword: string, savedPassword: 
     return await GeneratePassword(enteredPassword,salt) === savedPassword;
 }
 
-export const  GenerateSignature = (payload: VendorPayload) => {
+export const  GenerateSignature = (payload: AuthPayload) => {
     return jwt.sign(payload, JWT_SECRET, {expiresIn: '1d'});
 }
 
